@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Weather
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-list-header>Weather</ion-list-header>
+    <ion-item>
+      <label>Today</label>
+      <div>
+        <p>Temperature: {{forecast.temperature + '\u00B0'}}</p>
+        <p>Summary: {{forecast.summary}}</p>
+        <p>Wind:{{forecast.windBearing + " " + forecast.windSpeed + " mph"}}</p>
+      </div>
+    </ion-item>
+  </ion-list>
+</ion-content>
