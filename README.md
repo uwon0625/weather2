@@ -16,3 +16,8 @@ Note:<br/>
 
 Reference: <br/>
 http://ionicframework.com/docs/v2/getting-started/tutorial/<br/>
+
+Screenshoots:<br/><br/>
+<img src="images/home.png"/><br/>
+<img src="images/weather.png"/><br/>
+<img src="images/map.png"/><br/>
