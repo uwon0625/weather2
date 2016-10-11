@@ -6,4 +6,5 @@ export interface IForecast {
     summary: string;
     windBearing: number;
     windSpeed: number;
+	windDirection: string;
 }

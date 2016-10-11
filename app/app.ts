@@ -2,12 +2,13 @@ import { Component } from '@angular/core';
 import { Platform, ionicBootstrap } from 'ionic-angular';
 import { StatusBar } from 'ionic-native';
 import { TabsPage } from './pages/tabs/tabs';
+import { Jsonp, JSONP_PROVIDERS } from '@angular/http';
 import { ForecastService } from './providers/forecast.service';
 import { LocationService } from './providers/location.service';
 
 @Component({
   template: '<ion-nav [root]="rootPage"></ion-nav>',
-  providers: [ForecastService, LocationService],
+  providers: [Jsonp, JSONP_PROVIDERS, ForecastService, LocationService],
 })
 export class MyApp {
 
@@ -24,4 +25,4 @@ export class MyApp {
   }
 }
 
-ionicBootstrap(MyApp, [ForecastService, LocationService], {});
+ionicBootstrap(MyApp, [Jsonp, JSONP_PROVIDERS, ForecastService, LocationService], {});

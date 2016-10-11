@@ -12,9 +12,12 @@
     <ion-item>
       <label>Today</label>
       <div>
+		    <p>Zip:{{zip}}</p>
+        <p>Location:{{forecast.location}}</p>
         <p>Temperature: {{forecast.temperature + '\u00B0'}}</p>
         <p>Summary: {{forecast.summary}}</p>
-        <p>Wind:{{forecast.windBearing + " " + forecast.windSpeed + " mph"}}</p>
+        <p>Wind Direction:{{forecast.windDirection}}</p>
+		<p>Wind Speed:{{forecast.windSpeed + " mph"}}
       </div>
     </ion-item>
   </ion-list>

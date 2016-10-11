@@ -6,7 +6,6 @@ declare var google: any;
 
 @Component({
   templateUrl: 'build/pages/map/map.html',
-  providers: [LocationService]
 })
 export class MapPage {
   @Input() zip: string;
@@ -24,6 +23,8 @@ export class MapPage {
 
   ionViewLoaded() {
     if (!this.location.lat) {
+      if (!this.zip)
+        this.zip = this.locationService.getZip();
       this.getLatLng(this.zip);
     }
   }
@@ -46,4 +47,9 @@ export class MapPage {
     var trafficLayer = new google.maps.TrafficLayer();
     trafficLayer.setMap(this.map);
   }
+
+  private handleError(error: any) {
+    console.log(error);
+  }  
+
 }

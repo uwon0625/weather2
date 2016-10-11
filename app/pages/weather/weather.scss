@@ -1,2 +1,8 @@
 .weather {
+    color: map-get($colors, primary);
+    font-weight: normal;
+
+  p {
+    padding: 5 20px;
+  }    
 }

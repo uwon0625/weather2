@@ -6,11 +6,11 @@ import { MapPage } from '../map/map';
 
 @Component({
   templateUrl: 'build/pages/home/home.html',
-  providers: [LocationService]
 })
 export class HomePage {
-  private zip: string = '98005';
+  private zip: string = '33139';
   constructor(public navCtrl: NavController, public locationService: LocationService) {
+    this.saveLocation();
   }
 
   checkWeather(): void {
