@@ -5,7 +5,7 @@ This is based on Angular 2.0.0-rc.4, requires Google Maps API(and key).<br/>
 To run this app:<br/>
 1) install npm, Ionic 2, Typescript;<br/>
 2) cd project root folder, npm install;<br/>
-3) obtain your own google maps and <strike>Dark Sky forcast<strike>Open Weather Map API ID, update www/index.html and forecast.service.ts accordingly;<br/>
+3) obtain your own google maps and <strike>Dark Sky forcast</strike>Open Weather Map API ID, update www/index.html and forecast.service.ts accordingly;<br/>
 4) run command ionic platform add android(or ios, etc), ionic build android(or other platform);<br/>
 5) ionic serve (or ionic run ...).<br/>
 
